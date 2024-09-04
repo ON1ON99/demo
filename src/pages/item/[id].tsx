@@ -19,10 +19,8 @@ const Item = (id: string) => {
       }[];
     };
   }
-
   const [item, setItem] = useState<Item>({ images: { data: [] } });
   const router = useRouter()
-
   if (typeof window !== "undefined") {
     id = window.location.pathname.split("/")[2];
   }

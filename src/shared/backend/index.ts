@@ -80,7 +80,7 @@ class Backend {
         ...data.attributes,
       };
     } catch {
-      return {}; // MockData
+      return {};
     }
   }
 
@@ -103,7 +103,7 @@ class Backend {
         };
       });
     } catch {
-      return {}; // MockData
+      return {};
     }
   }
 }

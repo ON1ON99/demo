@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import style from "../styles/login.module.css";
 import backend from "@/shared/backend";
 import { useRouter } from "next/navigation";
-import { redirect } from "next/navigation";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -17,7 +16,6 @@ const Login = () => {
     }
   },[])
   
-
   const handleSubmit = (e: any) => {
     e.preventDefault();
     backend.login(email, password).then((data) => {

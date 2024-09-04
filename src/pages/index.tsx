@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 import ItemsList from "@/components/items_list/items_list";
 
 const Home = () => {
-
   const router = useRouter()
   return (
     <div className={style.wrapper}>
