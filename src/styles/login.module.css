@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
+}
+.logo{
+    height: 32px;
+    width: auto;
+}   
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form_group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
