@@ -20,7 +20,7 @@ const Item = (id: string) => {
     };
   }
   const [item, setItem] = useState<Item>({ images: { data: [] } });
-  const router = useRouter()
+  const router = useRouter();
   if (typeof window !== "undefined") {
     id = window.location.pathname.split("/")[2];
   }
@@ -34,7 +34,7 @@ const Item = (id: string) => {
       <div className={style.upper}>
         <div className={style.left_container}>
           <div className={style.exit_btn}>
-            <button onClick={()=> router.push('/catalog')}>Exit</button>
+            <button onClick={() => router.push("/catalog")}>Exit</button>
           </div>
           {/* <Swiper
             spaceBetween={50}
@@ -67,7 +67,6 @@ const Item = (id: string) => {
             alt="item"
           />
         </div>
-
         <div className={style.right_container}>
           <div className={style.title}>
             <p>{item.title ? item.title : "Title"}</p>
